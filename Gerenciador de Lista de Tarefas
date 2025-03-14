@@ -1,0 +1,38 @@
+console.log("Selecione uma das ações disponiveis pelo numero:")
+console.log("1- adicionarInicio. 2- adicionarFim. 3 - removerInicio. 4 -removerFim.")
+ 
+let opcao = Number(prompt("Digite:"))
+
+const tarefas = ["Estudar", "Treinar", "Ler"];  
+
+gerenciarTarefas(tarefas, opcao)
+
+
+function gerenciarTarefas (tarefas, opcao)
+{
+    if (opcao == 1)
+{
+    let n = prompt("Digite a tarefa a ser adicionada no começo:") 
+    tarefas.unshift(n)
+}
+
+if (opcao == 2)
+{
+    let n = prompt("Digite a tarefa a ser adicionada no fim:") 
+    tarefas.push(n)
+}
+
+if (opcao == 3)
+{
+    tarefas.shift()	
+    
+}
+
+if (opcao == 4)
+{
+   tarefas.pop()
+}
+
+}
+
+console.log(tarefas)
