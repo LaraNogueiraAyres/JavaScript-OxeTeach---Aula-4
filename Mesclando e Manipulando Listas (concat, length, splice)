@@ -1,0 +1,32 @@
+const lista1 = ["Maçã", "Banana"];  
+const lista2 = ["Uva", "Laranja", "Pera"];
+
+acao = prompt("Digite 'juntar' ou 'removerUltimos'")
+
+gerenciarListas(lista1, lista2, acao);
+
+
+function gerenciarListas(lista1, lista2, acao)
+{
+    if (acao == "juntar")
+    {
+        const newArr = lista1.concat(lista2)
+        console.log(newArr)
+    }
+
+    else if (acao == "removerUltimos")
+    {
+        let n = Number(prompt("Digite a quantidade de elementos a serem removidos"))
+        const newArr = lista1.concat(lista2)
+        newArr.splice(newArr.length - n, n)
+        console.log(newArr)
+    }        
+
+    else console.log("Opção invalida")
+    
+}
+
+
+
+// Resultado esperado: ["Maçã", "Banana", "Uva", "Laranja", "Pera"]
+// Resultado esperado: ["Maçã", "Banana", "Uva"]
