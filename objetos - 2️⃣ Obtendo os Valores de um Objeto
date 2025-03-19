@@ -1,0 +1,7 @@
+ function listarValores(pessoa)
+{
+    console.log(Object.values(pessoa))
+}
+
+let pessoa = { nome: "Ana", idade: 25, cidade: "São Paulo" };  
+listarValores(pessoa);
