@@ -1,0 +1,10 @@
+function converterMoeda(precosDolares)
+{
+  const precosReais = precosDolares.map((preco) => preco * 5)
+  return precosReais
+}
+
+let precosDolares = [10, 20, 30]
+let precosReal = converterMoeda(precosDolares)
+
+console.log(precosReal) 
