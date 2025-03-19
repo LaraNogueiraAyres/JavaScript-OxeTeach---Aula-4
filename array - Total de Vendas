@@ -1,0 +1,10 @@
+function calcularTotalVendas(vendas)
+{
+  const total = vendas.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
+  return total
+}
+
+let vendas = [150, 200, 100, 50]
+let totalVendas = calcularTotalVendas(vendas)
+
+console.log(totalVendas) 
