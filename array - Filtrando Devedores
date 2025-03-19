@@ -1,0 +1,9 @@
+function filtrarDevedores(dividas) 
+{
+  const devedores = dividas.filter((divida) => divida > 80)
+  return devedores
+}
+let dividas = [95.9, 180.5, 22.99, 105.99, 30.5]
+filtrarDevedores(dividas)
+
+console.log(filtrarDevedores(dividas))
