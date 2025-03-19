@@ -1,0 +1,9 @@
+function objetoParaMatriz(objeto) {
+  const matriz = Object.entries(objeto)
+  return matriz
+}
+
+let produto = { nome: "Notebook", preco: 3000, estoque: 10 }
+let matriz = objetoParaMatriz(produto)
+
+console.log(matriz)
